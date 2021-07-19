@@ -17,8 +17,8 @@ public class ClimateSampler {
         this.rainNoiseOctaves = new SimplexOctaveNoise(new Random(seed * 39811L), 4);
         this.detailNoiseOctaves = new SimplexOctaveNoise(new Random(seed * 543321L), 2);
         
-        this.climateCache = new ClimateChunkCache<>(384, false, ClimateChunk::new);
-        this.skyCache = new ClimateChunkCache<>(256, false, SkyChunk::new);
+        this.climateCache = new ClimateChunkCache<>(384, true, ClimateChunk::new);
+        this.skyCache = new ClimateChunkCache<>(256, true, SkyChunk::new);
     }
     
     public double sampleTemp(int x, int z) {
