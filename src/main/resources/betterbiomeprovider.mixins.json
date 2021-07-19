@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.bespectacled.betterbiomeprovider.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "BiomeSourceMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

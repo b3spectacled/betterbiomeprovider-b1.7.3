@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "betterbiomeprovider",
+  "version": "${version}",
+
+  "name": "BetterBiomeProvider",
+  "description": "A more efficient Beta biome provider.",
+  "authors": [
+    "bespectacled"
+  ],
+  "contact": {
+    "issues": "https://github.com/b3spectacled/BetterBiomeProvider/issues",
+    "sources": "https://github.com/b3spectacled/BetterBiomeProvider"
+  },
+
+  "license": "MIT",
+  "icon": "assets/betterbiomeprovider/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "init": [
+      "com.bespectacled.betterbiomeprovider.BetterBiomeProvider"
+    ]
+  },
+  "mixins": [
+    "betterbiomeprovider.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "1.0.0-beta.7.3"
+  }
+}
